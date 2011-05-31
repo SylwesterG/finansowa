@@ -14,3 +14,13 @@ default_index:
 
 default:
   url:   /:module/:action/*
+view_show_file:
+  url:   /view_file/:id
+  param: { module: view_file, action: show }
+  requirements:
+    id: \d+
+view_show_przedmiot:
+  url:   /view/:id
+  param: { module: view_file, action: showPrzed }
+  requirements:
+    id: \d+
